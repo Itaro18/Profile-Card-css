@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1
+{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color:hsl(229, 23%, 23%);
+}
+
+p,span
+{
+    font-weight: 400;
+    color:hsl(227, 10%, 46%);
+}
+
+body
+{
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: hsl(185, 75%, 39%);
+    margin: 0 auto;
+    background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+main
+{
+    margin: 0 auto;
+}
+
+.card
+{
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 2rem auto;
+    background-color: #fff;
+}
+
+.top
+{
+    position: relative;
+}
+
+
+.hero-img
+{
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    border: 0.3rem solid #fff;
+    position: absolute;
+    bottom: -50%; 
+    left :50%;
+    right: 50%;
+    transform: translate(-50%,-20%);
+}
+
+
+
+.intro
+{
+    margin: 18% 0 1.5rem;
+}
+
+.place
+{
+    margin: 0.5rem 0;
+}
+
+.age
+{
+    margin-left: 0.25rem;
+}
+
+.line
+{
+    border-bottom: 0.05rem solid hsl(0, 0%, 59%);
+}
+
+.stats
+{   
+    padding: 1.7rem 3.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats{
+    font-size: 0.80rem;
+    letter-spacing: 0.1rem;
+}
+
+
+@media (max-width:425px)
+{
+    .card
+    {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    body
+    {
+        background-position: right 39vw bottom 46vh,left 45vw top 44vh;
+    }
+
+    .stats
+    {
+        padding: 1.5rem 2.8rem;
+    }
+}
+
+@media (max-width:340px) {
+    
+    main
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+    h1
+    {
+        font-size: 0.9rem;
+    }
+    p
+    {
+        font-size: 0.7rem;
+    }
+    .intro
+    {
+        margin-top: 22%;
+    }
+    .stats
+    {
+        padding: 1.5rem  2rem;
+    }
+}
